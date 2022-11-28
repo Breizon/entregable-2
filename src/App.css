@@ -1,0 +1,78 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('https://www.todofondos.net/wp-content/uploads/descargar-bosque-montanas-atardecer-clima-fresco-minimalismo-1024x600-1-scaled.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(173, 216, 230, 0.452);
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1f);
+}
+.card-header,
+.card-footer,
+.card-temp {
+    grid-column: span 2;
+}
+.card-title {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.card-sustitle {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.card-temp {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.card-info {
+   padding-top: 20px;
+}
+.card-description {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.card-list {
+    display: grid;
+    gap: 8px;
+}
+.card-item {
+    font-size: 1rem;
+    font-weight: 200;
+}
+.card-footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content:center ;
+    padding-bottom: 20px;
+}
+.card-btn {
+    padding: 0.5em 1em;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(80, 200, 240);
+    color: white;
+    box-shadow: 1px 1px 10px rgb(6, 154, 204);
+    transition: transform 100ms ease;
+}
+.card-btn:hover {
+    transform: scale(1.05);
+}
+.card-btn:active {
+    transform: scale(1);
+    box-shadow: 1px 1px 5px rgb(6, 154, 204);
+}
